@@ -1,0 +1,9 @@
+def interest(P,R,T):
+  I=P*R*T
+  return I
+principal=int(input('enter the amount'))
+rate=float(input('enter the interest rate'))
+time=float(input('enter the duration'))
+simpleinterest=interest(principal,rate,time)
+print('simple interest=',simpleinterest)
+print('thank you')
