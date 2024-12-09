@@ -1,0 +1,9 @@
+avg = float(input('Enter the average:'))
+if avg>75:
+  print('distiction')
+elif avg>60:
+  print('first class')
+elif avg>40:
+  print('pass')
+else:
+  print('fail')
