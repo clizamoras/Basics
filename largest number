@@ -1,0 +1,9 @@
+a=int(input('The first number is'))
+b=int(input('The second number is'))
+c=int(input('The third number is'))
+if a>b and a>c:
+  print('a is the largest among three numbers')
+elif b>a and b>c:
+  print('b is the largest among three numbers')
+else:
+  print('c is the largest among three numbers')
