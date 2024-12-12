@@ -1,3 +1,4 @@
+
 def interest(P,R,T):
   I=P*R*T
   return I
