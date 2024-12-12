@@ -1,0 +1,17 @@
+print('Simple Calculator')
+print('.................')
+p=float(input('Enter the number:'))
+q=float(input('Enter the number:'))
+operator=input('+,-,*,/')
+if operator=='+':
+   a=p+q
+   print(a)
+elif operator=='-':
+   b=p-q
+   print(b)
+elif operator=='*':
+   c=p*q
+   print(c)
+else:
+   d=p/q
+   print(d)
