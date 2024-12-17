@@ -1,4 +1,6 @@
 
+
+
 avg = float(input('Enter the average:'))
 if avg>75:
   print('distiction')
