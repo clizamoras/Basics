@@ -1,3 +1,4 @@
+
 a=int(input('The first number is'))
 b=int(input('The second number is'))
 c=int(input('The third number is'))
