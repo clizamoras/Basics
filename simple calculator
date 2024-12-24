@@ -1,4 +1,5 @@
 
+
 print('Simple Calculator')
 print('.................')
 p=float(input('Enter the number:'))
