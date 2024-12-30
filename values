@@ -1,0 +1,3 @@
+spam=45+1
+spam=56
+print(spam)
