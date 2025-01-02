@@ -1,0 +1,6 @@
+print('Hello SJEC')
+name=input('Enter your name')
+print('It is nice to meet you.What is your name?')
+print('It is nice to meet you too.My name is',name)
+age=int(input('Enter your age'))
+print('My age after 24 years would be'+str(int(age)+24))
