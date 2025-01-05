@@ -1,0 +1,4 @@
+import re
+USNregex=re.compile(r'(\d)(D\D)(\d\d)(\D\D\d\d)')
+gp=USNregex.search('USN is 4SO22IO01')
+pringp.group()
