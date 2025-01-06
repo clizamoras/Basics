@@ -1,0 +1,7 @@
+ch=input('Enter the character')
+if ch>='A' and ch<='Z':
+  ch=ch.lower()
+  print(ch)
+else:
+  ch=ch.upper()
+  print(ch)
