@@ -1,3 +1,4 @@
+
 name=input('Enter your name')
 rollno=input('Enter your rollno')
 phy=int(input('Enter your marks in physics'))
