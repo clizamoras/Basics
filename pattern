@@ -1,0 +1,7 @@
+import re
+num=input('Enter a string with 5 characters')
+pattern=re.compile(r'^a...m$')
+if pattern.match(num):
+  print('search successfull')
+else:
+  print('pattern does not match')
