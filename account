@@ -1,0 +1,18 @@
+import re
+phoneregex=re.compile(r'\d\d\d\d\d\d\d\d\d\d')
+msg1=phoneregex.findall('8660615568'and '7619552764'and'7259779195'and '6364322867')
+emailregex=re.compile(r'[a-zA-Z0-9,_%+-]+@[a-zA-Z0-9.-]+\.(-zA-Z0-9.-]+\.){2,4}')
+msg2=emailregex.findall('morascliza@gmail.com'and'clivamoras@gamil.com')
+if msg1:
+    print("Phone Numbers found:")
+    for phone in msg1:
+        print(phone)
+else:
+    print("No phone numbers found.")
+
+if msg2:
+    print("\nEmail Addresses found:")
+    for email in msg2:
+        print(email)
+else:
+    print("No email addresses found.")
