@@ -1,0 +1,28 @@
+boo='St Joseph Engineering College'
+reverseboo=boo[::-1]
+print(reverseboo)
+
+
+
+# Original string
+original_string = "St. Joseph Engineering College"
+
+# i. Reverse the string
+reversed_string = original_string[::-1]
+print("Reversed String:", reversed_string)
+
+# ii. Slice the string into two
+# Finding the midpoint of the string
+mid_index = len(original_string) // 2
+first_half = original_string[:mid_index]
+second_half = original_string[mid_index:]
+
+print("First Half:", first_half)
+print("Second Half:", second_half)
+
+# iii. Convert the sliced halves to uppercase
+first_half_upper = first_half.upper()
+second_half_upper = second_half.upper()
+
+print("First Half in Uppercase:", first_half_upper)
+print("Second Half in Uppercase:", second_half_upper)
