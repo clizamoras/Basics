@@ -1,0 +1,31 @@
+import re
+
+# Sample text
+text = input("Enter text containing phone numbers and email addresses:\n")
+
+# Regular expression for phone numbers (e.g., 123-456-7890 or (123) 456-7890 or 1234567890)
+phone_pattern = r'\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}'
+
+# Regular expression for email addresses
+email_pattern = r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}'
+
+# Extracting phone numbers
+phone_numbers = re.findall(phone_pattern, text)
+
+# Extracting email addresses
+email_addresses = re.findall(email_pattern, text)
+
+# Display results
+if phone_numbers:
+    print("Phone Numbers found:")
+    for phone in phone_numbers:
+        print(phone)
+else:
+    print("No phone numbers found.")
+
+if email_addresses:
+    print("\nEmail Addresses found:")
+    for email in email_addresses:
+        print(email)
+else:
+    print("No email addresses found.")
