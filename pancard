@@ -1,0 +1,8 @@
+import re
+pancard=re.compile(r'[A-Z]{5}\d{4}[A-Z]{1}')
+s=input('Enter the pancard')
+msg=pancard.search(s)
+if msg!=None:
+  print('Correct Pancard')
+else:
+  print('Incorrect Pancard')
