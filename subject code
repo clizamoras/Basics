@@ -1,0 +1,8 @@
+import re
+m1=re.compile(r'\d{2}[A-Z]{3}\d{2}[A-Z]{1}')
+s=input('Enter the sentences with the subject code')
+msg=m1.search(s)
+if msg!=None:
+  print('Subject code found:',msg.group())
+else:
+  print('Subject code not found')
