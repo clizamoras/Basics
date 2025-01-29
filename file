@@ -1,0 +1,4 @@
+import os
+hFile = open('F:\\2024-2025\\ODD SEM\\22PLCB_Python\\mytext.txt','r')
+hcontent = hFile.read()
+print(hcontent)
