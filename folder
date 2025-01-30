@@ -1,0 +1,5 @@
+import os
+os.mkdir('D:\\New folder') # creating a folder
+new_file = open('D:\\New folder\\Students.txt', 'w')
+new_file.write("In this file we store student details")
+new_file.close()
