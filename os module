@@ -1,0 +1,14 @@
+import os
+lines = open("C:\\Users\\Lenovo\\OneDrive\\Desktop\\Sort.txt", "r").read() # reading file
+print(lines)
+l = lines.split(' ') # making list
+print(l)
+l.sort() # sorting the list
+print(l)
+sFile = open('F:\\Sort.txt', 'w')
+for i in l:
+sFile.write(i )
+sFile.write(' ')
+sFile.close()
+
+Out[46]: In [48]: In [52]: Out[52]: In [54]: Out[54]: In [56]: In [66]: Out[66]: In [72]: Out[72]: In [74]: Out[74]: In [78]: Out[78]: In [45]:
