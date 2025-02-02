@@ -1,0 +1,8 @@
+# Function to get the ones place of a number
+def get_ones_place(number):
+    return number % 10
+
+# Example usage
+num = int(input("Enter a number: "))
+ones_place = get_ones_place(num)
+print("The ones place of", num, "is", ones_place)
