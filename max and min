@@ -1,0 +1,5 @@
+def find_max_min(values):
+    return max(values), min(values)
+numbers = {10, 25, 5, 8, 30, 15}
+print("Largest:", max(numbers))
+print("Smallest:", min(numbers))
