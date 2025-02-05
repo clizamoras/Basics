@@ -1,0 +1,8 @@
+def bullets(list):
+    return "\n".join()
+
+
+items = ["Item 1", "Item 2", "Item 3", "Item 4"]
+wiki_markup = bullets(items)
+
+print(wiki_markup)
