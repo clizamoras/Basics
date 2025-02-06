@@ -1,0 +1,16 @@
+import re
+
+def check_pattern(input_string):
+
+    pattern = re.compile(r'^a.{3}m$')
+
+
+    if re.findall(pattern, input_string):
+        print("Search successful")
+    else:
+        print("Pattern does not match")
+
+
+user_input = input("Enter a string with five characters that starts with 'a' and ends with 'm': ")
+
+print(check_pattern(user_input))
