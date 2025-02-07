@@ -1,0 +1,7 @@
+x = 20  # Global variable
+
+def my_function():
+    print("Inside the function, x =", x)
+
+my_function()
+print("Outside the function, x =", x)
