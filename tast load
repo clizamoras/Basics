@@ -1,0 +1,65 @@
+import os
+
+TASKS_FILE = "tasks.txt"
+
+def load_tasks():
+    """Load tasks from file."""
+    if os.path.exists(TASKS_FILE):
+        with open(TASKS_FILE, "r") as file:
+            return [task.strip() for task in file.readlines()]
+    return []
+
+def save_tasks(tasks):
+    """Save tasks to file."""
+    with open(TASKS_FILE, "w") as file:
+        for task in tasks:
+            file.write(task + "\n")
+
+def display_tasks(tasks):
+    """Display all tasks."""
+    if not tasks:
+        print("No tasks found!")
+    else:
+        print("\nYour To-Do List:")
+        for i, task in enumerate(tasks, 1):
+            print(f"{i}. {task}")
+    print()
+
+def main():
+    tasks = load_tasks()
+
+    while True:
+        print("\nOptions: 1. Add Task  2. Remove Task  3. View Tasks  4. Exit")
+        choice = input("Enter your choice: ")
+
+        if choice == "1":
+            task = input("Enter new task: ")
+            tasks.append(task)
+            save_tasks(tasks)
+            print("Task added!")
+
+        elif choice == "2":
+            display_tasks(tasks)
+            try:
+                index = int(input("Enter task number to remove: ")) - 1
+                if 0 <= index < len(tasks):
+                    removed_task = tasks.pop(index)
+                    save_tasks(tasks)
+                    print(f"Removed task: {removed_task}")
+                else:
+                    print("Invalid task number!")
+            except ValueError:
+                print("Please enter a valid number.")
+
+        elif choice == "3":
+            display_tasks(tasks)
+
+        elif choice == "4":
+            print("Exiting... Have a productive day!")
+            break
+
+        else:
+            print("Invalid choice, please try again.")
+
+if __name__ == "__main__":
+    main()
