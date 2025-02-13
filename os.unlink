@@ -1,0 +1,7 @@
+import os
+file='example.txt'
+if os.path.exists(file):
+   os.unlink(file)
+   print('The file is deleted permenately')
+else:
+  print('The file does not exist')
