@@ -1,0 +1,8 @@
+import os
+file=open('example.txt','r')
+lines=file.readlines()
+reversedlines=lines[::-1]
+file.close()
+filer=open('example1.txt','w')
+content=file.write(reversedlines)
+filer.close()
