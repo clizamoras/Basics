@@ -1,0 +1,31 @@
+def show_tasks():
+    with open("tasks.txt", "r") as file:
+        tasks = file.readlines()
+        for i, task in enumerate(tasks, 1):
+            print(f"{i}. {task.strip()}")
+
+def add_task(task):
+    with open("tasks.txt", "a") as file:
+        file.write(task + "\n")
+
+def delete_task(task_number):
+    with open("tasks.txt", "r") as file:
+        tasks = file.readlines()
+    if 1 <= task_number <= len(tasks):
+        del tasks[task_number - 1]
+        with open("tasks.txt", "w") as file:
+            file.writelines(tasks)
+
+while True:
+    print("\n1. View Tasks\n2. Add Task\n3. Delete Task\n4. Exit")
+    choice = input("Enter choice: ")
+
+    if choice == "1":
+        show_tasks()
+    elif choice == "2":
+        add_task(input("Enter task: "))
+    elif choice == "3":
+        delete_task(int(input("Enter task number to delete: ")))
+    elif choice == "4":
+        break
+
