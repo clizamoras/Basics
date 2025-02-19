@@ -1,0 +1,20 @@
+import json
+
+contacts = {}
+
+# Load contacts from file
+try:
+    with open("contacts.json", "r") as file:
+        contacts = json.load(file)
+except FileNotFoundError:
+    pass
+
+def add_contact(name, phone):
+    contacts[name] = phone
+    with open("contacts.json", "w") as file:
+        json.dump(contacts, file)
+    print("Contact added successfully.")
+
+def view_contacts():
+    if not contacts:
+        print("
