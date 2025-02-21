@@ -1,0 +1,11 @@
+import smtplib
+
+def send_email():
+    sender_email = "your_email@gmail.com"
+    receiver_email = "receiver_email@gmail.com"
+    password = "your_password"
+
+    subject = "Hello from Python"
+    body = "This is a test email sent using Python!"
+
+  
