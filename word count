@@ -1,0 +1,11 @@
+def word_count(filename):
+    try:
+        with open(filename, "r") as file:
+            text = file.read()
+        words = text.split()
+        return len(words)
+    except FileNotFoundError:
+        return "File not found!"
+
+# Example
+print("Word count:", word_count("sample.txt"))
