@@ -1,0 +1,20 @@
+class ATM:
+    def __init__(self, balance=0):
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount
+        print(f"Deposited: ${amount}, New Balance: ${self.balance}")
+
+    def withdraw(self, amount):
+        if amount > self.balance:
+            print("Insufficient balance!")
+        else:
+            self.balance -= amount
+            print(f"Withdrawn: ${amount}, New Balance: ${self.balance}")
+
+# Example
+atm = ATM(500)
+atm.deposit(200)
+atm.withdraw(100)
+atm.withdraw(700)
