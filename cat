@@ -1,0 +1,32 @@
+<fieldset>
+  <legend>Choose your meal:</legend>
+
+  <input checked id="breakfast" type="radio" name="meal" value="breakfast">
+  <label for="breakfast">Breakfast</label>
+
+  <input id="lunch" type="radio" name="meal" value="lunch">
+  <label for="lunch">Lunch</label>
+</fieldset>
+
+<fieldset>
+  <legend>Is your cat an indoor or outdoor cat?</legend>
+
+  <input checked id="indoor" type="radio" name="indoor-outdoor" value="indoor">
+  <label for="indoor">Indoor</label>
+
+  <input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor">
+  <label for="outdoor">Outdoor</label>
+</fieldset>
+
+<fieldset>
+  <legend>What's your cat's personality?</legend>
+
+  <input checked id="loving" type="checkbox" name="personality" value="loving">
+  <label for="loving">Loving</label>
+
+  <input id="lazy" type="checkbox" name="personality" value="lazy">
+  <label for="lazy">Lazy</label>
+
+  <input id="energetic" type="checkbox" name="personality" value="energetic">
+  <label for="energetic">Energetic</label>
+</fieldset>
