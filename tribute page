@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title id="title">Dr. Norman Borlaug</title>
+    <style>
+      #image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+  </style>
+ <link rel="stylesheet" href="styles.css"> 
+  </head>
+
+  <body>
+
+    <main id="main">
+
+    <div id="img-div">
+
+      <img id="image">
+
+       <div id="img-caption">Build a Tribute Page</div>
+
+    </div>
+
+   <div id="tribute-info">Information</div>
+<a href="https://i.etsystatic.com/13516520/r/il/bab03d/2382400028/il_fullxfull.2382400028_f3d8.jpg" id="tribute-link" value="tribute" target="_blank" >
+
+</main>
+
+    </body>
+
+  </html>
+ 
