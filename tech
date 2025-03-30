@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <style>
+      
+      @media (max-width: 600px) {
+        #navbar {
+          background-color: lightgray; 
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>navigation</header>
+      <a class="nav-link" href="#javascript">javascript</a>
+      <a class="nav-link" href="#javasc">javasc</a>
+      <a class="nav-link" href="#javascpit">javascpit</a>
+      <a class="nav-link" href="#javas">javas</a>
+      <a class="nav-link" href="#javascripy">javascripy</a>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="javascript">
+        <header>javascript</header>
+        <p><code></code></p>
+        <p><code></code></p>
+        <p><code></code></p>
+        <p><code></code></p>
+        <p><code></code></p>
+        <p><li></p>
+        <p><li></p>
+        <p><li></p>
+        <p><li></p>
+        <p><li></p>
+      </section>
+
+      <section class="main-section" id="javasc">
+        <header>javasc</header>
+      </section>
+
+      <section class="main-section" id="javascpit">
+        <header>javascpit</header>
+      </section>
+
+      <section class="main-section" id="javas">
+        <header>javas</header>
+      </section>
+
+      <section class="main-section" id="javascripy">
+        <header>javascripy</header>
+      </section>
+    </main>
+  </body>
+</html>
