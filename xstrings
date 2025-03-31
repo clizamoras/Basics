@@ -1,3 +1,4 @@
+
 def isUSN(text):
   if len(text)!=10:
     return False
