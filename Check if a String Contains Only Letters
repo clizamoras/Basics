@@ -1,0 +1,7 @@
+import re
+
+text = input("Enter a string: ")
+if re.fullmatch(r"[A-Za-z]+", text):
+    print("The string contains only letters.")
+else:
+    print("The string contains other characters too.")
