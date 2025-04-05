@@ -1,0 +1,3 @@
+sentence = "Python is fun"
+words = sentence.split()
+print("Words:", words)
