@@ -1,0 +1,6 @@
+import re
+
+text = "My PIN is 1234 and my code is 5678"
+result = re.sub(r'\d', '#', text)
+
+print(result)  # Output: My PIN is #### and my code is ####
