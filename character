@@ -1,4 +1,5 @@
 
+
 ch=input('Enter the character')
 if ch>='A' and ch<='Z':
   ch=ch.lower()
