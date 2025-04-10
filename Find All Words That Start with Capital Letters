@@ -1,0 +1,7 @@
+import re
+
+text = "Python is Fun. Regular Expressions are Powerful."
+
+words = re.findall(r'\b[A-Z][a-z]*\b', text)
+
+print("Capitalized words:", words)
