@@ -1,0 +1,6 @@
+import re
+
+text = "Python is fun and easy"
+new_text = re.sub(r"\s", "-", text)
+
+print("Modified string:", new_text)
