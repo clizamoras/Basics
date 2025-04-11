@@ -1,0 +1,9 @@
+import re
+
+date = input("Enter date (DD-MM-YYYY): ")
+pattern = r"^\d{2}-\d{2}-\d{4}$"
+
+if re.match(pattern, date):
+    print("Valid date format")
+else:
+    print("Invalid format")
