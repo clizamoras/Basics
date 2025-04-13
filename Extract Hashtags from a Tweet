@@ -1,0 +1,5 @@
+import re
+
+tweet = "Loving the #Python and #Regex tutorials, they're amazing! #coding"
+hashtags = re.findall(r'#\w+', tweet)
+print("Hashtags found:", hashtags)
