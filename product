@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      @media only screen and(max-width:400px){
+      .nav-link{
+      text-align:center;
+      display:flexbox;
+      }
+      }
+      #nav-bar{
+      top:0;
+      position:fixed;
+      display:flex;
+      }
+      </style>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header id="header">
+    <img id="header-img" src="https://biz.libretexts.org/@api/deki/files/3902/114f1a88e609c3aeefe09a04dd691ea851a48ef1?revision=1">
+   
+    <nav id="nav-bar">
+    <a class="nav-link" href="#header"></a>
+     <a class="nav-link" href="#header"></a>
+      <a class="nav-link" href="#header"></a>
+      </nav>
+       </header>
+      <iframe id="video" src="https://youtu.be/rmtTw8IbhcE"></iframe>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input id="email" placeholder="email" type="email" name="email">
+      <input id="submit" type="submit">
+      </form>
+  </body>
+  </html>
