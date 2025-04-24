@@ -1,0 +1,10 @@
+import random
+
+jokes = [
+    "Why don't scientists trust atoms? Because they make up everything!",
+    "Why did the computer go to the doctor? Because it had a virus!",
+    "Why was the math book sad? Because it had too many problems."
+]
+
+print("Here's a joke for you:")
+print(random.choice(jokes))
