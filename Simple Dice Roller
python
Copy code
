@@ -1,0 +1,4 @@
+import random
+
+input("Press Enter to roll the dice...")
+print("You rolled a", random.randint(1, 6))
