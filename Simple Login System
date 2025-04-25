@@ -1,0 +1,10 @@
+username = "user"
+password = "pass123"
+
+u = input("Username: ")
+p = input("Password: ")
+
+if u == username and p == password:
+    print("Login successful!")
+else:
+    print("Login failed.")
