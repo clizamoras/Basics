@@ -1,0 +1,6 @@
+ch = input("Enter a character: ")
+
+if ch.isdigit():
+    print(f"The character '{ch}' is a number.")
+else:
+    print(f"The character '{ch}' is not a number.")
