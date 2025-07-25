@@ -1,3 +1,4 @@
+
 num = int(input("Enter a number: "))
 order = len(str(num))
 sum = 0
