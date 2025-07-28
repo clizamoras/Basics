@@ -1,0 +1,12 @@
+class Solution:
+ def roman(s):
+  r={'I':1,'V':5,'X':10,'C':100,'M':1000}
+    total=0
+    prev=0
+  for ch in s[::-1]:
+   if r[ch]<prev:
+    total-=r[ch]
+  else:
+    total+=r[ch]
+  prev=r[ch]
+return total
