@@ -1,0 +1,15 @@
+class Solution:
+ def validstrs(self,s):
+  stack=[]
+  for ch in s:
+   if ch=="(":
+    return ")"
+   elif ch=="{":
+    return "}"
+   elif ch=="[":
+    return "]"
+   else:
+    if not stack or stack.pop()!=ch:
+      return False
+  return not stack
+  
