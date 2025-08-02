@@ -1,0 +1,8 @@
+class Solution:
+ def remove(self,nums,target):
+  k=0
+  for i in range(len(nums)):
+   if num[i]!=target:
+     num[k]=num[i]
+     k+=1
+  return k
