@@ -1,0 +1,5 @@
+class Solution:
+ def string(self,str):
+  str=str.strip()
+  word=str.split()
+  return len(word[-1])
