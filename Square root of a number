@@ -1,0 +1,6 @@
+class Solution:
+ def squareroot(self,x):
+  i=0
+  while i*i<=x:
+   i+=1
+ returnn i-1
