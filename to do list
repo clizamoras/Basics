@@ -1,3 +1,4 @@
+
 def show_tasks():
     with open("tasks.txt", "r") as file:
         tasks = file.readlines()
