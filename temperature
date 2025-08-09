@@ -1,3 +1,4 @@
+
 celcius=float(input('Enter the temperature'))
 f=(9/5)+32
 print('Temperature in farenheit',f)
