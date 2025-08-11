@@ -1,0 +1,10 @@
+class Solution:
+ def binaryTree(self,root):
+  if not root:
+   return []
+  left=self.binaryTree(root.left)
+  current=[root.val]
+  right=self.binaryTree(root.right)
+  return left+current+right
+   
+  
