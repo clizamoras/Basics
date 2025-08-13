@@ -1,0 +1,15 @@
+class TreeNode:
+ def __init__(self,val=0,right=None,left=None):
+  self.val=val;
+  self.right=right;
+  self.left=left;
+class Solution:
+ def sortarray(self,nums):
+  if not nums:
+   return 0
+   mid=len(nums)//2
+  root=TreeNode(nums[mid])
+  root.left=self.sortarray(nums[:mid]
+  root.right=self.sortarray(nums[mid+1:]
+  return root
+  
