@@ -1,0 +1,14 @@
+class Treenode:
+ def __init__(self,val=0,next=None):
+  self.val=val
+  self.next=next
+class Solution:
+ def SortedArry(self,num):
+  if not num:
+   return None
+  mid=len(num)//2
+  root=Treenode(num[mid])
+  root.left=self.SortedArray(num[:mid])
+  root.right=self.SortedArray(num[mid+1:])
+  return root
+  
