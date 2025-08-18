@@ -1,0 +1,11 @@
+class Solution:
+ def minimum(self,root):
+  if not root:
+   return 0
+  if not left.root and not right.root:
+    return 1
+  if not left.root:
+    return 1+ self.mininum(right.root)
+  if not right.root:
+    return 1+self.minimum(left.root)
+  return self.minimum(root.left),self.minimum(root.right)
