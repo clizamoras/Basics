@@ -1,0 +1,7 @@
+class Solution:
+ def sum(self,root):
+  if not root:
+   return 0
+  if not root.left and not root.right:
+   return targetsum==root.val
+  return (self.sum(root.left,targetsum-root.val) or self.sum(root.right,targetsum-root.val))
