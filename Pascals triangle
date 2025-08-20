@@ -1,0 +1,14 @@
+class Solution:
+ def generate(slef,numrows):
+  traingle=[]
+  for r in range(len(numrows)):
+   if r==0:
+    triangel.append([1])
+   else:
+    prev=triangle[-1]
+    rows=[1]
+    for i in range(len(prev)-1):
+      rows.append(prev[i]+prev[i+1])
+   rows.append(1)
+   triangle.append(rows)
+ return triangle
