@@ -1,3 +1,4 @@
+
 class Solution:
  def sameTree(self,p,q):
   if not p and not q:
