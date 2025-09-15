@@ -1,0 +1,7 @@
+class Solution:
+ def column(self,columnnumber):
+  result=0
+  for char in columnnumber:
+   value=ord(vhar)-ord('A')+1
+   result=result*26+value
+  return result
