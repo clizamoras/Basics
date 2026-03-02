@@ -1,0 +1,13 @@
+class Solution:
+    def armstrong(self,num):
+        n=len(str(num))
+        s=0
+        for i in str(num):
+            s+=pow(int(i),n)
+        if(s==num):
+            return True
+        else:
+            return False
+obj=Solution()
+print(obj.armstrong(153))
+        
