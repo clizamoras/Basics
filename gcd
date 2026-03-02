@@ -1,0 +1,11 @@
+class Solution:
+    def gcd(self,n1,n2):
+        n=min(n1,n2)
+        s=[]
+        for i in range(1,n):
+            if n1%i==0 and n2%i==0:
+                s.append(i)
+        m=max(s)
+        return m
+obj=Solution()
+print(obj.gcd(8,20))
