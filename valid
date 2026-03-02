@@ -1,0 +1,22 @@
+class Solution:
+  def valid(self,num):
+    result=""
+    level=0
+    for ch in num:
+      if ch=='(':
+        level=level+1
+        result=result+'('
+      else:
+        level=level-1
+        result=result+')'
+      if level<0:
+         return False
+     if level>0:
+        return False
+     elif level==0:
+        return True
+      else:
+         print("invalid")
+num="()()"
+obj=Solution()
+print(obj.valid(num))
