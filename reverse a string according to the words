@@ -1,0 +1,14 @@
+class Solution:
+    def reverse(self,strs):
+        n=len(strs)
+        word=[]
+        word=strs.split()
+        s=[]
+        temp=""
+        for ch in word[::-1]:
+            s.append(ch)
+        temp="".join(s)
+        return temp
+strs="welcome to the jungle"
+obj=Solution()
+print(obj.reverse(strs))
