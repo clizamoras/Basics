@@ -1,0 +1,15 @@
+class Solution:
+    def palin(self, strs, start, end):
+        if end==0 or end==1:
+            return True
+        
+        if strs[start] != strs[end]:
+            return False
+        else:
+            return self.palin(strs, start+1, end-1)
+
+
+strs = "ABBA"
+obj = Solution()
+
+print(obj.palin(strs, 0, len(strs)-1))
