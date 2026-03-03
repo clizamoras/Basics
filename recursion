@@ -1,0 +1,9 @@
+class Solution:
+    def reverse(self,curr,n):
+        if curr<n:
+            return n
+        print(n)
+        return self.reverse(curr-1,n+1)
+
+obj=Solution()
+print(obj.reverse(4,1))
