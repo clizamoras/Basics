@@ -1,0 +1,15 @@
+class Solution:
+    def hashing(self,num):
+        dictt={}
+        s=[]
+        n=len(num)
+        
+        for i in range(n):
+            if num[i] in dictt:
+                dictt[num[i]]+=1
+            else:
+                dictt[num[i]]=1
+        return dictt
+num=[10,5,10,15,10,5]
+obj=Solution()
+print(obj.hashing(num))
