@@ -1,0 +1,10 @@
+class Solution:
+  def longest(self,num):
+    n=len(num)
+    for i in range(n-1,-1,-1):
+      if num[i]%2!=0:
+        return num[0:i+1]
+   return False
+num='112321378'
+obj=Solution()
+print(obj.longest(num))
