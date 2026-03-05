@@ -1,0 +1,11 @@
+class Solution:
+  def sort(self,arr):
+    n=len(num)
+    for i in range(num-1.-1,-1):
+      for j in range(i):
+        if(arr[j]>arr[j+1]):
+          arr[j],arr[j+1]=arr[j+1],arr[j]
+    return num
+num=[4,2,1,3]
+obj=Solution()
+print(obj.sort(num))
