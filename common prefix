@@ -1,0 +1,16 @@
+class Solution:
+  def prefix(self,num):
+    n=len(num)
+    s=num[0]
+    e=num[n-1]
+    m=len(s)
+    w=""  
+    for i in range(m):
+      ch=s[i]
+      cha=e[i]
+      if(ch==cha):
+       w=w+ch
+    return w
+num=["flower","flow","flight"]
+obj=Solution()
+print(obj.prefix(num))
