@@ -1,0 +1,16 @@
+class Solution:
+    def sort(self,num,n,i):
+          if i==n:
+              return num
+          temp=num[i]
+          j=i-1
+          while j>=0 and num[j]>temp:
+              num[j+1]=num[j]
+              j-=1
+          num[j+1]=temp
+          return self.sort(num,n,i+1)
+num=[8,9,4,3,6,5]
+n=len(num)
+i=0
+obj=Solution()
+print(obj.sort(num,n,i))
