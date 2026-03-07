@@ -1,0 +1,13 @@
+class Solution:
+    def sort(self,num,n,j):
+          i=n-1
+          if i==j:
+              return num
+          if num[j]>num[i]:
+              num[j],num[i]=num[i],num[j]
+          return self.sort(num,n,j+1)
+num=[8,9,4,3,6,5]
+n=len(num)
+j=0
+obj=Solution()
+print(obj.sort(num,n,j))
