@@ -1,0 +1,18 @@
+class Solution:
+    def rotation(self,num):
+        n=len(num)
+        s=[]
+        r=[]
+        for i in range(n):
+            if num[i]==0:
+                s.append(num[i])
+        for i in range(n):
+            if num[i]!=0:
+                r.append(num[i])
+        return r+s
+num=[1 ,0 ,2 ,3 ,0 ,4 ,0 ,1]
+
+obj=Solution()
+print(obj.rotation(num))
+                
+        
