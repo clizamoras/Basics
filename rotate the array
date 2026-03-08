@@ -1,0 +1,17 @@
+class Solution:
+    def rotation(self,num,k):
+        n=len(num)
+        s=num[0:k]
+        m=len(s)
+        num=num[k:]
+        for i in range(m):
+            num.append(s[i])
+
+        return num
+        
+num=[1,2,3,4,5]
+k=2
+obj=Solution()
+print(obj.rotation(num,k))
+                
+        
