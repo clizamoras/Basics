@@ -1,0 +1,13 @@
+class Solution:
+    def anagram(self,str1,str2):
+        n1=len(str1)
+        n2=len(str2)
+        if n1==n2:
+            if sorted(str1)==sorted(str2):
+                return True
+        return False
+str1="CAT"
+str2="ACT"
+obj=Solution()
+print(obj.anagram(str1,str2))
+    
