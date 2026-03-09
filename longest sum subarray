@@ -1,0 +1,15 @@
+class Solution:
+    def anagram(self,str1,k):
+        n=len(str1)
+        s=0
+        w=[]
+        num=sorted(str1)
+        for i in range(n):
+            s+=num[i]
+            if s==k:
+                return i+1
+        return -1
+str1=[-3, 2, 1]
+k=6
+obj=Solution()
+print(obj.anagram(str1,k))
