@@ -1,0 +1,14 @@
+class Solution:
+    def frequency(self,num):
+        n=len(num)
+        s={}
+        for ch in num:
+            if ch in s:
+                s[ch]+=1
+            else:
+                s[ch]=1
+        w=sorted(s,key=s.get,reverse=True)
+        return w
+num="tree"
+obj=Solution()
+print(obj.frequency(num))
