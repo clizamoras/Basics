@@ -1,0 +1,13 @@
+class Solution:
+    def frequency(self,num):
+        n=len(num)
+        c=0
+        s=0
+        for i in range(n):
+            c+=num[i]
+            if c>s:
+                s=c
+        return s
+num=[2, 3, 5, -2, 7, -4]
+obj=Solution()
+print(obj.frequency(num))
