@@ -1,0 +1,15 @@
+class Solution:
+    def parenthesis(self,s):
+        n=len(s)
+        level=0
+        m=0
+        for ch in s:
+            if ch=='(':
+                level+=1
+                m=max(m,level)
+            elif ch==')':
+                level-=1
+        return m
+s="(1+(2*3)+((8)/4))+1"
+obj=Solution()
+print(obj.parenthesis(s))
