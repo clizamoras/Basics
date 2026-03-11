@@ -1,0 +1,14 @@
+class Solution:
+    def matrix(self,num):
+        rows=len(num)
+        cols=len(num[0])
+        s=[]
+        for i in range(rows):
+            for j in range (i,cols):
+                num[i][j],num[j][i]=num[j][i],num[i][j]
+        for i in range(rows):
+            num[i].reverse()
+        return num
+num=[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+obj=Solution()
+print(obj.matrix(num))
