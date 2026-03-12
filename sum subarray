@@ -1,0 +1,17 @@
+class Solution:
+    def sum(self,num,k):
+        n=len(num)
+        s=0
+        r=[]
+        for i in range(n):
+            s=0
+            for j in range(i,n):
+                s+=num[j]
+                if s==k:
+                    r.append(num[j])
+        l=len(r)
+        return l
+num=[3, 1, 2, 4]
+k=6
+obj=Solution()
+print(obj.sum(num,k))
