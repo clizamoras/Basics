@@ -1,0 +1,12 @@
+class Solution:
+  def vowels(self,num):
+   c=0
+   vowels="aeiou"
+   for ch in num:
+     if ch in vowels:
+       c+=1
+  return c
+num="hello"
+obj=Solution()
+print(obj.vowels(num))
+  
