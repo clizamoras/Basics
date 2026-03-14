@@ -1,0 +1,6 @@
+class Solution:
+  def number(self,num):
+    return list(set(num))
+num=[1,2,2,3,4,4]
+obj=Solution()
+print(obj.number(num))
