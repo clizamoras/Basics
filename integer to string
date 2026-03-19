@@ -1,0 +1,14 @@
+class Solution:
+    def pascal(self,num):
+        r=''
+        for i in num:
+            if i=='+':
+                r=r+'+'
+            if i=='-':
+                r=r+'-'
+            if i.isdigit():
+                r=r+i
+        return int(r)
+obj=Solution()
+n=" -1234"
+print(obj.pascal(n))
