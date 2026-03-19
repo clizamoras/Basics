@@ -1,0 +1,12 @@
+class Solution:
+    def pascal(self,num):
+        t=[]
+        for i in range(num):
+            r=[1]*(i+1)
+            for j in range(1,i):
+                r[j]=t[i-1][j-1]+t[i-1][j]
+            t.append(r)
+        return t
+obj=Solution()
+n=5
+print(obj.pascal(n))
