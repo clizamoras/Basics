@@ -1,0 +1,15 @@
+class Solution:
+    def subset(self,s):
+        n=len(s)
+       
+        w=[]
+        for i in range(n):
+            for j in range(i,n):
+                if s[i]>s[j]:
+                    w.append((s[j],s[i]))
+        count=len(w)
+        return count
+s=[5,4,3,2,1]
+
+obj=Solution()
+print(obj.subset(s))
