@@ -1,0 +1,15 @@
+class Solution:
+    def subset(self,s,k):
+        n=len(s)
+        count=0
+        for i in range(n):
+            w=set()
+            for j in range(i,n):
+                w.add(s[j])
+                if len(w)==k:
+                    count+=1
+        return count
+s="pqpqs"
+k=2
+obj=Solution()
+print(obj.subset(s,k))
