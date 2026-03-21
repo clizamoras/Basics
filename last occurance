@@ -1,0 +1,14 @@
+class Solution:
+    def beauty(self,arr,key):
+        n=len(arr)
+        s=[]
+        for i in range(n):
+            if arr[i]==key:
+                s.append(i)
+        m=max(s)
+        return m
+        
+arr=[3, 4, 13, 13, 13, 20, 40]
+key=13
+obj=Solution()
+print(obj.beauty(arr,key))
