@@ -1,0 +1,16 @@
+class Solution:
+    def beauty(self,s):
+        n=len(s)
+        d={}
+        for ch in s:
+            if ch in d:
+                d[ch]+=1
+            else:
+                d[ch]=1
+        m=max(d.values())
+        mi=min(d.values())
+        b=m-mi
+        return b
+s="aaaa"
+obj=Solution()
+print(obj.beauty(s))
