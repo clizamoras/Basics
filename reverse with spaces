@@ -1,0 +1,12 @@
+class Solution:
+    def string(self,s):
+        w=s.split()
+        r=[]
+        for ch in w[::-1]:
+            r.append(ch)
+        h=" ".join(r)
+        return h
+            
+s="welcome to the jungle"
+obj=Solution()
+print(obj.string(s))
