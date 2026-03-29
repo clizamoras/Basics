@@ -1,0 +1,9 @@
+class Solution:
+  def __init__(self,data):
+    self.data=data
+    self.next=None
+n=Solution(10)
+m=Solution(20)
+n.next=m
+print(n.data)
+print(n.next.data)
