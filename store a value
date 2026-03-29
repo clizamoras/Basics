@@ -1,0 +1,5 @@
+class Solution:
+ def__init__(self,x):
+   self.x=x
+obj=Solution(10)
+print(obj.x)
