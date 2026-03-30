@@ -1,0 +1,19 @@
+import math
+class Solution:
+  def koko(self,num,h):
+    m=max(num)
+    for k in range(1,m):
+       t=0
+       l=0
+       s=[]
+       for i in num:
+          t=math.ceil(i/k)
+          s.append(t)
+       for i in s:
+          l+=i
+       if l==h:
+          return k
+num=[7, 15, 6, 3]
+h=8
+obj=Solution()
+print(obj.koko(num,h))
