@@ -1,0 +1,17 @@
+class Node:
+  def __init__(self,data):
+     self.data=data
+     self.next=None
+class Solution:
+  def insert(self,val):
+     new=Node(val)
+     if head is None:
+        head=new
+     temp=head
+     while(temp):
+        print(temp.data)
+        temp=temp.next
+     temp=new
+obj=Solution()
+obj.insert(10)
+obj.insert(20)
