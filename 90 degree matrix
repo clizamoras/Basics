@@ -4,6 +4,7 @@ class Solution:
         cols=len(num[0])
         s=[]
         for i in range(rows):
+
             for j in range (i,cols):
                 num[i][j],num[j][i]=num[j][i],num[i][j]
         for i in range(rows):
