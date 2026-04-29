@@ -4,6 +4,7 @@ class Solution:
         count=0
         for i in range(n):
             w=set()
+
             for j in range(i,n):
                 w.add(s[j])
                 if len(w)==k:
