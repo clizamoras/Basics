@@ -1,0 +1,37 @@
+def merge_sort(nums):
+    # Base case: if array has 1 or 0 elements, it's already sorted
+    if len(nums) <= 1:
+        return nums
+    
+    # Step 1: Split array into halves
+    mid = len(nums) // 2
+    left_half = merge_sort(nums[:mid])   # sort left half
+    right_half = merge_sort(nums[mid:])  # sort right half
+    
+    # Step 2: Merge sorted halves
+    return merge(left_half, right_half)
+
+
+def merge(left, right):
+    sorted_arr = []
+    i = j = 0
+    
+    # Compare elements of both halves and merge in sorted order
+    while i < len(left) and j < len(right):
+        if left[i] <= right[j]:
+            sorted_arr.append(left[i])
+            i += 1
+        else:
+            sorted_arr.append(right[j])
+            j += 1
+    
+    # Add remaining elements (if any)
+    sorted_arr.extend(left[i:])
+    sorted_arr.extend(right[j:])
+    
+    return sorted_arr
+
+
+# Example usage
+nums = [7, 4, 1, 5, 3]
+print(merge_sort(nums))   # Output: [1, 3, 4, 5, 7]
