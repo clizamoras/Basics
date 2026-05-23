@@ -1,3 +1,4 @@
+
 letters = ['a', 'b', 'a', 'c', 'a']
 count_a = letters.count('a')
 print("Number of 'a's:", count_a)
