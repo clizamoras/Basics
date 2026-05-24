@@ -1,3 +1,4 @@
+
 student = {'name': 'Alice', 'grade': 'A'}
 for key, value in student.items():
     print(key, ":", value)
