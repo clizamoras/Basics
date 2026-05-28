@@ -1,0 +1,6 @@
+do{
+while tedtandset(&lock)
+  critical section
+  lock=False
+  remainder section 
+}while(True)
