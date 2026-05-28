@@ -1,0 +1,8 @@
+do{
+flag[i]=True
+turn=j
+while(flag[i] && turn==j)
+ critical section 
+ flag[i]=False
+ remainder section 
+}while(True)
