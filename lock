@@ -1,0 +1,7 @@
+do{
+  while testandsetlock(&lock)
+   // do nothing 
+   critical section
+   lock=true
+   remainder section
+}while(True)
