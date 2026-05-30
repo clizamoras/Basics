@@ -1,0 +1,8 @@
+signal(S){
+S++
+}
+wait(S){
+ while(S<=0)
+// no-op
+ S--
+}
