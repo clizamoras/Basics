@@ -1,0 +1,21 @@
+typedef struct{
+ int value;
+ struct process *list;
+}semaphore 
+
+
+wait(Semaphore *S){
+S->value--;
+if(S->value<0){
+ add the process to S->list;
+ block();
+}
+}
+
+signal(Semaphore S){
+S->value++;
+if(S->value<=0){
+remove the process p drom S->list;
+wakeup(P);
+}
+}
