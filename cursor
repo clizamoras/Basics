@@ -1,0 +1,8 @@
+declare student cursor for
+select name from student;
+@studentname varchar[30];
+open student;
+fetch from student into :@studentname;
+printf(@studentname);
+close student;
+deallocate student;
