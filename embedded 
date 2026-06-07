@@ -1,0 +1,8 @@
+exec sql begin declare section;
+int empid;
+char empname[30];
+exec sql end declare section;
+empid 15;
+exec sql
+select name into :empname from employee where id=empid;
+printf(%s,empname);
