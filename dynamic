@@ -1,0 +1,6 @@
+declare 
+query varchar(100);
+begin 
+query:='select * from employee where salary >30000';
+execute immediate query;
+end;
