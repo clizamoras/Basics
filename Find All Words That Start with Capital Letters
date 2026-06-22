@@ -1,4 +1,3 @@
-
 import re
 text = "Python is Fun. Regular Expressions are Powerful."
 
