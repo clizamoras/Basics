@@ -1,0 +1,57 @@
+class Node:
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class Solution:
+    def atbeginninng(self,head,x):
+        new_node=Node(x)
+        new_node.next=head
+        return new_node
+        
+    def atposition(self,head,x,pos):
+        new_node=Node(x)
+        if pos==0:
+            new_node.next=head
+            return new_node
+        else:
+            count=0
+            current=head
+            while(count<pos-1):
+                current=current.next
+                count=count+1
+            new_node.next=current.next
+            current.next=new_node
+            return head
+    
+    
+    def atend(self,head,x):
+        new_node=Node(x)
+        count=0
+        current=head
+        while(current.next!=None):
+            current=current.next
+        current.next=new_node
+        return head
+    def printlist(self,head):
+        while head:
+            print(head.data,end=" ")
+            head=head.next
+
+head=Node(10)
+head.next=Node(20)
+head.next.next=Node(30)
+obj=Solution()
+n=int(input("Enter the number you want to insert"))
+choice=int(input("Enter the choice : 1.Insert at the beginning  2.Insert at a desired position  3.Insert at the end"))
+if choice ==1:
+    head=obj.atbeginninng(head,n)
+    obj.printlist(head)
+elif choice ==2:
+    pos=int(input("Enter a position"))
+    head=obj.atposition(head,n,pos)
+    obj.printlist(head)
+elif choice==3:
+    head=obj.atend(head,n)
+    obj.printlist(head)
+else:
+    print("invalid choice")
