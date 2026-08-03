@@ -1,0 +1,43 @@
+from flask import Flask,request,jsonify
+from flask_restful import Api,Resource
+
+app=Flask(__name__)
+api=Api(app)
+
+recipes=[]
+recipe_id_counter=1
+
+class Recipe(Resource):
+    def get(self,recipe_id):
+        for recipe in recipes:
+            if recipe["id"]==recipe_id:
+                return jsonify(recipe)
+        return {"message":"Recipe not found"},404
+    def put(self,recipe_id):
+        for recipe in recipes:
+            if recipe["id"]==recipe_id:
+                recipe.update(request.json)
+                return jsonify(recipe)
+        return {"message":"Recipe not fount"},404
+class RecipeList(Resource):
+    def get(self):
+        return jonify(recipes)
+    def post(self):
+        global recipe_id_counter
+        new_recipe=request.json
+        
+        new_recipe["id"]=recipe_id_counter
+        new_recipe["published"]=False
+        recipes.append(new_recipe)
+        recipe_id_counter+=1
+        return jsonify(new_recipe)
+class PublishRecipe(Resource):
+    def put(self):
+        for recipe in recipes:
+            recipe["published"]=True
+        return jsonify({"message":"All Recipes are set to be published"})
+api.add_resource(RecipeList,"/recipes")
+api.add_resource(Recipe,"/recipes/<int:recipe_id>")
+api.add_resource(PublishRecipe,"/recipe/publish")
+if __name__=="__main__":
+    app.run(debug=True)
