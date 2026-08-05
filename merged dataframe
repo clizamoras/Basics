@@ -1,0 +1,21 @@
+import pandas as pd
+left=pd.DataFrame({
+    'key':['K0','K1','K2'],
+    'A':['A0','A1','A2']
+})
+right=pd.DataFrame({
+    'key':['K0','K1','K2'],
+    'B':['B0','B1','B2']
+})
+merged=pd.merge(left,right,on='key')
+print("Merged dataframe:",merged)
+data={
+    'A':['all','all','in','in'],
+    'B':['one','two','one','two'],
+    'C':[1,2,3,4],
+    'D':[10,20,30,40]
+}
+df=pd.DataFrame(data)
+print(df)
+aggregated=df.groupby('A').sum()
+print("aggregated dataframe:",aggregated)
