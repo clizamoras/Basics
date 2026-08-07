@@ -1,4 +1,3 @@
-
 class Solution:
     def subset(self,s,k):
         n=len(s)
