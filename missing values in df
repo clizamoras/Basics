@@ -1,0 +1,13 @@
+import pandas as pd
+import numpy as np
+data={
+    'A':[1,2,np.nan],
+    'B':[4,np.nan,6],
+    'C':[7,8,9]
+}
+df=pd.DataFrame(data)
+print("Data Frame with missing values",df)
+dff=df.fillna(0)
+print("Data Frame with filled values",dff)
+dfh=df.dropna()
+print("data frame with dropped vales",dfh)
