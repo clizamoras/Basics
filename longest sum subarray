@@ -1,3 +1,4 @@
+
 class Solution:
     def anagram(self,str1,k):
         n=len(str1)
