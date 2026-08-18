@@ -1,3 +1,4 @@
+
 class Solution:
     def hashing(self,num):
         dictt={}
